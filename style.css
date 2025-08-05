@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f172a;
+    color: #e8e8e8;
+    /*padding: 15px;*/
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav,section{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.grey_link{
+    color: lightgrey;
+}
+
+.white_link{
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    font-size:1rem;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+}
+
+.headerText{
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#headerlogo{
+    font-family: sans-serif;
+}
+
+header section img{
+    max-width: 38px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+.searchBar{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto ;
+    gap: 14px;
+    border: solid 1px lightgray;
+    padding: 15px;
+    border-radius: 24px;
+}
+
+.searchBar:hover{
+    border-color: transparent;
+    background: #334155;
+}
+
+.iconButtonsContainer{
+    display: flex;;
+    align-items: center;
+    gap:15px;
+}
+
+.iconButton{
+    background:transparent;
+    border: none;
+    color:white;
+    font-size:1em;
+    cursor: pointer;
+}
+
+input{
+    background: transparent;
+    outline: none;
+    border: unset;
+    color: white;
+    flex: 1;
+}
+
+.searchButton button{
+    padding: 6px 15px;
+    border-radius: 5px;
+    background: #334155;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.searchButton{
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+
+.searchButton button:hover{
+    border: 1px solid darkgray;
+}
+
+.languageSelection{
+    font-size: 1em;
+}
+
+.languageSelection span{
+    color: rgb(2, 149, 255);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;;
+    border-top: 1px solid gray;
+}
+footer>section{
+    padding : 14px;
+}
+
+.footerLinks{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footerLinks a{
+    cursor: pointer;
+}
+
+@media (min-width: 540px){
+    footer>section:last-child{
+        flex-direction: row;
+    }
+}
